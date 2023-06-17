@@ -1,5 +1,15 @@
 import React from 'react'
 
+function header({course}) {
+  return(
+    <h1>{course}</h1>
+    )
+}
+
+// function content({part,exercise}) => {
+
+// }
+
 function App() {
 
   const course ="Half stack application development";
@@ -13,12 +23,7 @@ function App() {
 
   return (
     <div>
-      <h1> {course} </h1>
-      <p> {part1} {exercises1} </p>
-      <p> {part2} {exercises2} </p>
-      <p> {part3} {exercises3} </p>
-      <p> {part4} {exercises1+exercises2+exercises3} </p>
-
+      <header />
     </div>
   )
 }
